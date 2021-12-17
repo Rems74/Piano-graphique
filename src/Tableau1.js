@@ -69,28 +69,17 @@ class Tableau1 extends Phaser.Scene {
         }, this);
 
         let piano1 = this.sound.add('Piano1');
-        this.input.keyboard.on('keydown-A', function () {
-            piano1.play();
-        });
 
-        this.input.keyboard.on('keyup-A', function () {
-            piano1.stopAll();
+        this.input.keyboard.on('keypress-A', function () {
+            piano1.play();
         });
 
         this.input.keyboard.on('keydown-B', function () {
             drums.play();
         });
 
-        this.input.keyboard.on('keyup-B', function () {
-            drums.stopAll();
-        });
-
         this.input.keyboard.on('keydown-C', function () {
             percussion.play();
-        });
-
-        this.input.keyboard.on('keyup-C', function () {
-            percussion.stopAll();
         });
 
         this.input.keyboard.on('keydown-D', function () {
