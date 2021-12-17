@@ -1,6 +1,6 @@
 
-class Tableau1 extends Phaser.Scene {
 
+class Tableau1 extends Phaser.Scene {
 
     preload() {
         //charger les images
@@ -48,11 +48,17 @@ class Tableau1 extends Phaser.Scene {
         this.load.audio('Piano35','g-4.mp3' )
         this.load.audio('Piano36','g-5.mp3' )
         this.load.audio('batterie','batterie.mp3' )
+        this.load.audio('mbira1','mbira1.mp3' )
+        this.load.audio('mbira2','mbira2.mp3' )
+        this.load.audio('mbira3','mbira3.mp3' )
+        this.load.audio('mbira4','mbira4.mp3' )
+        this.load.audio('mbira5','mbira5.mp3' )
     }
 
 
 
     create() {
+
         this.initKeyboard()
 
 
@@ -62,12 +68,13 @@ class Tableau1 extends Phaser.Scene {
             this.sound.stopAll();
         }, this);
 
+        let piano1 = this.sound.add('Piano1');
         this.input.keyboard.on('keydown-A', function () {
-            bass.play();
+            piano1.play();
         });
 
         this.input.keyboard.on('keyup-A', function () {
-            bass.stopAll();
+            piano1.stopAll();
         });
 
         this.input.keyboard.on('keydown-B', function () {
