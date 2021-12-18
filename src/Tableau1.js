@@ -86,6 +86,131 @@ class Tableau1 extends Phaser.Scene {
                     me.sound.play('Piano1')
                     me.add.image(0,0,'pose-1').setOrigin(0,0).scale=0.5
                     break;
+
+                case Phaser.Input.Keyboard.KeyCodes.Z:
+                    me.sound.play('Piano2')
+                    me.add.image(0,0,'pose-2').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.E:
+                    me.sound.play('Piano3')
+                    me.add.image(0,0,'pose-3').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.R:
+                    me.sound.play('Piano4')
+                    me.add.image(0,0,'pose-4').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.T:
+                    me.sound.play('Piano5')
+                    me.add.image(0,0,'pose-5').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.Y:
+                    me.sound.play('Piano6')
+                    me.add.image(0,0,'pose-6').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.U:
+                    me.sound.play('Piano7')
+                    me.add.image(0,0,'pose-7').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.I:
+                    me.sound.play('Piano8')
+                    me.add.image(0,0,'pose-8').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.O:
+                    me.sound.play('Piano9')
+                    me.add.image(0,0,'pose-9').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.P:
+                    me.sound.play('Piano10')
+                    me.add.image(0,0,'pose-10').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.Q:
+                    me.sound.play('Piano11')
+                    me.add.image(0,0,'pose-11').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.S:
+                    me.sound.play('Piano12')
+                    me.add.image(0,0,'pose-12').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.D:
+                    me.sound.play('Piano13')
+                    me.add.image(0,0,'pose-13').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.F:
+                    me.sound.play('Piano14')
+                    me.add.image(0,0,'pose-14').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.G:
+                    me.sound.play('Piano15')
+                    me.add.image(0,0,'pose-15').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.H:
+                    me.sound.play('Piano16')
+                    me.add.image(0,0,'pose-16').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.J:
+                    me.sound.play('Piano17')
+                    me.add.image(0,0,'pose-17').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.K:
+                    me.sound.play('Piano18')
+                    me.add.image(0,0,'pose-18').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.L:
+                    me.sound.play('Piano19')
+                    me.add.image(0,0,'pose-19').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.M:
+                    me.sound.play('Piano20')
+                    me.add.image(0,0,'pose-20').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.W:
+                    me.sound.play('Piano21')
+                    me.add.image(0,0,'pose-21').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.X:
+                    me.sound.play('Piano21')
+                    me.add.image(0,0,'pose-21').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.C:
+                    me.sound.play('Piano22')
+                    me.add.image(0,0,'pose-22').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.V:
+                    me.sound.play('Piano23')
+                    me.add.image(0,0,'pose-23').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.B:
+                    me.sound.play('Piano24')
+                    me.add.image(0,0,'pose-24').setOrigin(0,0).scale=0.5
+                    break;
+
+                case Phaser.Input.Keyboard.KeyCodes.N:
+                    me.sound.play('Piano25')
+                    me.add.image(0,0,'pose-25').setOrigin(0,0).scale=0.5
+                    break;
             }
         });
     }
