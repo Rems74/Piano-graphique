@@ -5,11 +5,15 @@ class Tableau1 extends Phaser.Scene {
     preload() {
         //charger les images
 
-        this.load.image()
+        this.load.image('base','assets-poses/base.jpg')
+
+        for (let c=1;c<=26;c++){
+            this.load.image('pose-'+c,'assets-poses/pose'+c+'.jpg')
+        }
 
         //charger les sons
 
-        this.load.setPath('Piano-graphique/assets_sons');
+        this.load.setPath('assets-sons');
 
         this.load.audio('Piano1','a3.mp3' )
         this.load.audio('Piano2','a4.mp3' )
@@ -59,61 +63,30 @@ class Tableau1 extends Phaser.Scene {
 
     create() {
 
+        let base = this.add.image(0,0,'base').setOrigin(0,0)
+        base.scale=0.5
+
+
         this.initKeyboard()
 
 
     }
-    initKeyboard(){
-        this.input.keyboard.on('keydown-SPACE', function () {
-            this.sound.stopAll();
-        }, this);
+    initKeyboard() {
 
-        let piano1 = this.sound.add('Piano1');
+        let me = this;
 
-        this.input.keyboard.on('keypress-A', function () {
-            piano1.play();
+        this.input.keyboard.on('keydown', function (kevent) {
+            switch (kevent.keyCode) {
+            }
         });
+        this.input.keyboard.on('keyup', function (kevent) {
+            switch (kevent.keyCode) {
 
-        this.input.keyboard.on('keydown-B', function () {
-            drums.play();
-        });
-
-        this.input.keyboard.on('keydown-C', function () {
-            percussion.play();
-        });
-
-        this.input.keyboard.on('keydown-D', function () {
-            synth1.play();
-        });
-
-        this.input.keyboard.on('keyup-D', function () {
-            synth1.stopAll();
-        });
-
-        this.input.keyboard.on('keydown-E', function () {
-            synth2.play();
-        });
-
-        this.input.keyboard.on('keyup-E', function () {
-            synth2.stopAll();
-        });
-
-        this.input.keyboard.on('keydown-F', function () {
-            top1.play();
-        });
-
-        this.input.keyboard.on('keyup-F', function () {
-            top1.stopAll();
-        });
-
-        this.input.keyboard.on('keydown-G', function () {
-            top2.play();
-        });
-
-        this.input.keyboard.on('keyup-G', function () {
-            top2.stopAll();
+                case Phaser.Input.Keyboard.KeyCodes.A:
+                    me.sound.play('Piano1')
+                    me.add.image(0,0,'pose-1').setOrigin(0,0).scale=0.5
+                    break;
+            }
         });
     }
-
-
 }
